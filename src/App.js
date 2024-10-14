@@ -81,22 +81,22 @@ function App() {
   }
 
 
-  // if(!logged) {
-  //   return (
-  //     <div className="App-login">
-  //       <div className="login-container">
-  //         <h1>Login</h1>
-  //         <input type="text" placeholder="Usuário" id="user" />
-  //         <input type="password" placeholder="Senha" id="password" />
-  //         <button
-  //           className="login-btn"
-  //           onClick={() => login(document.getElementById('user').value, document.getElementById('password').value)}>
-  //           Entrar
-  //         </button>
-  //       </div>
-  //     </div>
-  //   );
-  // }
+  if(!logged) {
+    return (
+      <div className="App-login">
+        <div className="login-container">
+          <h1>Login</h1>
+          <input type="text" placeholder="Usuário" id="user" />
+          <input type="password" placeholder="Senha" id="password" />
+          <button
+            className="login-btn"
+            onClick={() => login(document.getElementById('user').value, document.getElementById('password').value)}>
+            Entrar
+          </button>
+        </div>
+      </div>
+    );
+  }
 
   return (
     <div className="App">
